@@ -6,7 +6,6 @@ import java.util.concurrent.TimeUnit;
 public class Hello {
     public static void main(String[] args) throws InterruptedException {
         int i = 0;
-        int x = 0;
         String s = "dog";
 
         Map<Integer, String> gav = new HashMap<Integer, String>();
@@ -39,7 +38,3 @@ public class Hello {
         }
     }
 }
-
-
-
-
