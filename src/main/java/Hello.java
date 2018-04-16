@@ -2,6 +2,7 @@ package main.java;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Hello {
     public static void main(String[] args) {
@@ -14,8 +15,13 @@ public class Hello {
         gav.add("5 dog");
         gav.add("6 dog");
 
-        for(String s : gav){
-        System.out.println(s);
+        try {
+            for (String s : gav) {
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println(s);
+            }
+        }catch (InterruptedException e){
+            e.printStackTrace();
         }
     }
     public ArrayList<String> doge(ArrayList<String> gav){
