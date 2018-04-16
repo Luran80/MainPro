@@ -1,12 +1,12 @@
 package main.java;
 
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class Hello {
     public static void main(String[] args) {
 
-        ArrayList gav = new ArrayList<String>();
+        List<String> gav = new ArrayList<String>();
         gav.add("1 dog");
         gav.add("2 dog");
         gav.add("3 dog");
@@ -14,7 +14,9 @@ public class Hello {
         gav.add("5 dog");
         gav.add("6 dog");
 
-        System.out.println(gav.get(0));
+        for(String s : gav){
+        System.out.println(s);
+        }
     }
     public ArrayList<String> doge(ArrayList<String> gav){
         return gav;
