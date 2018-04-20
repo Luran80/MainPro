@@ -1,5 +1,3 @@
-package main.java;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,7 +14,7 @@ public class MainStream {
         System.out.println("Введите название директории в которой искать файл: " + fileName);
         directoryName = br.readLine();
 
-        FileSearch fileSearch = new FileSearch(fileName, directoryName);
-        fileSearch.search();
+        FileSearch fileSearch = new FileSearch(fileName);
+        fileSearch.search(directoryName);
     }
 }
