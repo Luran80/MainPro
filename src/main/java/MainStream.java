@@ -4,8 +4,10 @@ import java.io.InputStreamReader;
 
 public class MainStream {
     public static void main(String[] args) throws IOException {
+
         String fileName;
         String directoryName;
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Введите имя файла");
@@ -16,5 +18,7 @@ public class MainStream {
 
         FileSearch fileSearch = new FileSearch(fileName);
         fileSearch.search(directoryName);
+
+        fileSearch.viewFiles();
     }
 }
