@@ -7,6 +7,11 @@
     <groupId>com.mic</groupId>
     <artifactId>mic.com</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <junit.version>4.12</junit.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
